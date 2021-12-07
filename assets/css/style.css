@@ -161,6 +161,12 @@ h6 {
     max-height: 40px;
 }
 
+@media (max-width: 768px) {
+    #header {
+        border-radius: 0;
+    }
+}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -620,7 +626,8 @@ section {
 
 @media (max-width: 768px) {
     .about {
-        text-align: center;
+        /* text-align: center; */
+        margin-top: 30px;
     }
 }
 
