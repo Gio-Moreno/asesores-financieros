@@ -202,7 +202,7 @@ h6 {
     padding: 10px 0 10px 30px;
     font-family: "Krub", sans-serif;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 300;
     color: #f9f9f9;
     white-space: nowrap;
     transition: 0.3s;
@@ -227,6 +227,7 @@ h6 {
     background: #ffd500;
     padding: 9px 25px;
     margin-left: 30px;
+    margin-right: 30px;
     border-radius: 5px;
     font-weight: 600;
     color: #fff;
@@ -308,7 +309,7 @@ h6 {
 */
 
 .mobile-nav-toggle {
-    color: #2d405f;
+    color: #ffffff;
     font-size: 28px;
     cursor: pointer;
     display: none;
@@ -417,16 +418,24 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-
-#hero {
-    width: 100%;
-    height: 80vh;
-    background: white;
+.first-section{
+    padding: 0;
+    background-image: url(/assets/img/background.png);
+    background-position: right;
 }
 
+#hero {
+    height: auto;
+    background: hsla(216, 38%, 97%, 0.90);
+   
+}
+
+
+
 #hero .container {
-    padding-top: 70px;
+    padding-top: 50px;
     padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 #hero h1 {
@@ -449,7 +458,7 @@ h6 {
 }
 
 .enLinea {
-    font-size: 42px!important;
+    font-size: 36px!important;
     font-family: cursive;
     color: #FF2F73!important;
     line-height: 60px!important;
@@ -460,10 +469,8 @@ h6 {
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 1px;
-    display: block;
-    padding: 8px 32px 10px 32px;
-    margin-top: 25px;
-    border-radius: 5px;
+    padding: 10px 32px 10px 32px;
+    border-radius: 10px;
     transition: 0.5s;
     color: #ffd500;
     background: #272256;
@@ -471,10 +478,25 @@ h6 {
 
 #hero .btn-get-started:hover {
     background: #1a1739;
+    
 }
 
 #hero .hero-img {
+    height: 70%;
     margin-top: 40px;
+    align-items: center;
+    positoin
+}
+
+#hero-input {
+    margin-top: -110px;
+    box-shadow: 0 0 20px #1a173920;
+}
+
+#prestamo {
+    border: transparent!important;
+    border-bottom: 1px solid blue!important;
+    background: #ffffff70;
 }
 
 @media (max-width: 992px) {
@@ -488,8 +510,10 @@ h6 {
         line-height: 24px;
     }
     #hero .hero-img {
-        max-width: 90%;
+        max-width: 100%;
     }
+
+   
 }
 
 @media (max-height: 768px) {
@@ -501,12 +525,28 @@ h6 {
 }
 
 @media (max-width: 768px) {
-    #hero {
-        margin-bottom: 50px!important;
+    
+    .first-section{
+        padding: 40px 0 0 0;
     }
+
     #hero .hero-img {
         display: none;
     }
+
+    #hero-input {
+        margin-top: 0;
+        margin-bottom: 10px!important;
+        box-shadow: none;
+        background: rgb(255, 255, 255);
+        
+        
+    }
+
+    #hero-input input{
+        margin-bottom: 20px!important;
+    }
+   
 }
 
 
@@ -516,6 +556,7 @@ h6 {
 
 section {
     padding: 60px 0;
+    
     overflow: hidden;
 }
 
@@ -1304,13 +1345,12 @@ section {
 .faq .faq-list .question {
     display: block;
     position: relative;
-    font-family: #3b4ef8;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
     padding-left: 25px;
     cursor: pointer;
-    color: #0a22f6;
+    color:#FF2F73;
     transition: 0.3s;
 }
 
@@ -1335,7 +1375,7 @@ section {
 }
 
 .faq .faq-list .collapsed:hover {
-    color: #3b4ef8;
+    color: #FF2F73;
 }
 
 .faq .faq-list .collapsed .icon-show {
@@ -1538,6 +1578,11 @@ section {
     line-height: 1;
     font-weight: 700;
     color: #2d405f;
+}
+
+#footer .footer-top .footer-contact img{
+    width: 80%;
+    margin-bottom: 20px;
 }
 
 #footer .footer-top .footer-contact p {
